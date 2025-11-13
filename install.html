@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete installation guide for APP NAME on Windows, macOS, Linux, and Android. Step-by-step instructions with screenshots and troubleshooting.">
+    <meta name="keywords" content="APP NAME installation, setup, windows install, mac install, linux install, android install">
+    <meta name="author" content="APP NAME">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/install.html">
+    <meta property="og:title" content="Installation Guide - APP NAME">
+    <meta property="og:description" content="Complete installation guide for APP NAME on all platforms. Step-by-step instructions with troubleshooting.">
+    <meta property="og:image" content="https://example.com/assets/images/install-hero.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://example.com/install.html">
+    <meta property="twitter:title" content="Installation Guide - APP NAME">
+    <meta property="twitter:description" content="Complete installation guide for APP NAME on all platforms. Step-by-step instructions with troubleshooting.">
+    <meta property="twitter:image" content="https://example.com/assets/images/install-hero.png">
+
+    <title>Installation Guide - APP NAME</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Install APP NAME",
+      "description": "Step-by-step installation guide for APP NAME on Windows, macOS, Linux, and Android",
+      "image": "https://example.com/assets/images/installation-screenshot.png",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "APP NAME Installer"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Download the installer",
+          "text": "Download the appropriate installer for your operating system from the download page"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Run the installer",
+          "text": "Follow the installation wizard to complete the setup"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Launch the application",
+          "text": "Start using APP NAME"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="assets/images/logo.svg" alt="APP NAME Logo">
+                <span>APP NAME</span>
+            </div>
+
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="features.html" class="nav__link">Features</a></li>
+                <li><a href="download.html" class="nav__link">Download</a></li>
+                <li><a href="install.html" class="nav__link active">Install</a></li>
+                <li><a href="userguide.html" class="nav__link">User Guide</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+
+            <a href="download.html" class="nav__cta">Download Now</a>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="nav__overlay" id="navOverlay"></div>
+    </header>
+
+    <!-- Installation Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="text-center">
+                <h1>Installation Guide</h1>
+                <p class="hero__subtitle" style="color: rgba(255, 255, 255, 0.9); max-width: 600px; margin: 0 auto var(--space-8);">
+                    Step-by-step instructions for installing APP NAME on Windows, macOS, Linux, and Android. Get up and running in minutes!
+                </p>
+                <a href="download.html" class="btn btn--secondary btn--large">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download First
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Tabs -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Choose Your Platform</h2>
+                <p class="section__subtitle">Select your operating system for detailed installation instructions</p>
+            </div>
+
+            <div class="tabs">
+                <div class="tabs__nav">
+                    <button class="tabs__button active" onclick="switchTab('windows')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+                        </svg>
+                        Windows
+                    </button>
+                    <button class="tabs__button" onclick="switchTab('macos')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        macOS
+                    </button>
+                    <button class="tabs__button" onclick="switchTab('linux')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-4.627 4.114-4.466 6.75.098 1.378.16 3.207-1.482 3.916-1.297.559-2.568.226-3.8-.14C1.553 10.119.817 10 0 10v14h8.459c2.929 0 5.314-2.384 5.314-5.312 0-1.328-.487-2.542-1.294-3.472.61-.986.97-2.141.97-3.379 0-1.163-.317-2.251-.87-3.183.383-.935.6-1.962.6-3.041C13.179 2.493 10.867 0 8.048 0h-.544zm-1.838 3.81c.17 0 .34.07.469.199.26.259.26.68 0 .939-.13.129-.3.199-.469.199s-.34-.07-.469-.199a.666.666 0 0 1 0-.939c.13-.13.3-.199.469-.199zm1.75 2.562c.171 0 .342.071.472.201.26.26.26.681 0 .94a.667.667 0 0 1-.94 0 .666.666 0 0 1 0-.94c.13-.13.3-.201.469-.201z"/>
+                        </svg>
+                        Linux
+                    </button>
+                    <button class="tabs__button" onclick="switchTab('android')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24c-1.59-.69-3.38-1.08-5.27-1.08-1.89 0-3.68.39-5.27 1.08L2.65 5.67c-.19-.28-.54-.38-.83-.22-.3.16-.42.54-.26.85L3.4 9.48C1.28 11.35 0 14.03 0 17v2h24v-2c0-2.97-1.28-5.65-3.4-7.52zM7 15.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm10 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"/>
+                        </svg>
+                        Android
+                    </button>
+                </div>
+
+                <!-- Windows Installation -->
+                <div id="windows" class="tabs__content active">
+                    <div class="installation-guide">
+                        <h3>Windows Installation</h3>
+
+                        <div class="alert alert--info">
+                            <strong>System Requirements:</strong> Windows 10 or later (64-bit), 4GB RAM, 500MB disk space
+                        </div>
+
+                        <div class="installation-steps">
+                            <div class="step">
+                                <div class="step__number">1</div>
+                                <div class="step__content">
+                                    <h4>Download the Installer</h4>
+                                    <p>Download <code>APPNAME-v1.0.0-windows-x64.exe</code> from our <a href="download.html">download page</a>.</p>
+                                    <div class="screenshot-placeholder">
+                                        <img src="assets/images/screenshots/windows-download.png" alt="Windows download page">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">2</div>
+                                <div class="step__content">
+                                    <h4>Verify SHA256 Checksum (Optional)</h4>
+                                    <p>Open PowerShell and run the following command to verify your download:</p>
+                                    <pre><code>Get-FileHash -Algorithm SHA256 -Path "C:\Downloads\APPNAME-v1.0.0-windows-x64.exe"</code></pre>
+                                    <p>Compare the output with the checksum shown on the download page.</p>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">3</div>
+                                <div class="step__content">
+                                    <h4>Run the Installer</h4>
+                                    <p>Double-click the downloaded .exe file to start the installation wizard.</p>
+                                    <div class="screenshot-placeholder">
+                                        <img src="assets/images/screenshots/windows-installer.png" alt="Windows installer wizard">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">4</div>
+                                <div class="step__content">
+                                    <h4>Follow the Setup Wizard</h4>
+                                    <ol>
+                                        <li>Accept the License Agreement</li>
+                                        <li>Choose installation folder (default: <code>C:\Program Files\APP NAME</code>)</li>
+                                        <li>Select additional components (optional)</li>
+                                        <li>Click "Install" to begin installation</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">5</div>
+                                <div class="step__content">
+                                    <h4>Launch APP NAME</h4>
+                                    <p>Once installation is complete, launch APP NAME from the Start Menu or desktop shortcut.</p>
+                                    <div class="screenshot-placeholder">
+                                        <img src="assets/images/screenshots/windows-start-menu.png" alt="Windows Start Menu">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="troubleshooting">
+                            <h4>Troubleshooting</h4>
+                            <div class="accordion">
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>Windows SmartScreen blocks the installation</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>This is normal for new software releases. Click "More info" then "Run anyway" to continue.</p>
+                                            <img src="assets/images/screenshots/smartscreen-warning.png" alt="SmartScreen warning">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>"Windows protected your PC" message appears</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>Click "More info" and then "Run anyway". This occurs because our application is new to Windows Defender's database.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>Installation fails due to insufficient permissions</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>Right-click the installer and select "Run as administrator". Ensure you have admin rights on your computer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uninstall">
+                            <h4>Uninstallation</h4>
+                            <p>To uninstall APP NAME:</p>
+                            <ol>
+                                <li>Open Control Panel → Programs → Programs and Features</li>
+                                <li>Find "APP NAME" in the list</li>
+                                <li>Click "Uninstall" and follow the prompts</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- macOS Installation -->
+                <div id="macos" class="tabs__content">
+                    <div class="installation-guide">
+                        <h3>macOS Installation</h3>
+
+                        <div class="alert alert--info">
+                            <strong>System Requirements:</strong> macOS 10.14 (Mojave) or later, 4GB RAM, 500MB disk space
+                        </div>
+
+                        <div class="installation-steps">
+                            <div class="step">
+                                <div class="step__number">1</div>
+                                <div class="step__content">
+                                    <h4>Download the DMG File</h4>
+                                    <p>Download <code>APPNAME-v1.0.0-macos.dmg</code> from our <a href="download.html">download page</a>.</p>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">2</div>
+                                <div class="step__content">
+                                    <h4>Verify SHA256 Checksum (Optional)</h4>
+                                    <p>Open Terminal and run:</p>
+                                    <pre><code>shasum -a 256 ~/Downloads/APPNAME-v1.0.0-macos.dmg</code></pre>
+                                    <p>Compare with the checksum from the download page.</p>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">3</div>
+                                <div class="step__content">
+                                    <h4>Open the DMG File</h4>
+                                    <p>Double-click the downloaded .dmg file to mount the disk image.</p>
+                                    <div class="screenshot-placeholder">
+                                        <img src="assets/images/screenshots/macos-dmg.png" alt="macOS DMG window">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">4</div>
+                                <div class="step__content">
+                                    <h4>Install the Application</h4>
+                                    <p>Drag the APP NAME icon into your Applications folder.</p>
+                                    <div class="screenshot-placeholder">
+                                        <img src="assets/images/screenshots/macos-drag-install.png" alt="Drag to install">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">5</div>
+                                <div class="step__content">
+                                    <h4>Launch the Application</h4>
+                                    <p>Open Applications folder and double-click APP NAME, or use Spotlight to search for it.</p>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">6</div>
+                                <div class="step__content">
+                                    <h4>Grant Permissions (First Launch)</h4>
+                                    <p>On first launch, macOS may ask for permission to run the application. Click "Open" to continue.</p>
+                                    <div class="screenshot-placeholder">
+                                        <img src="assets/images/screenshots/macos-gatekeeper.png" alt="Gatekeeper prompt">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="troubleshooting">
+                            <h4>Troubleshooting</h4>
+                            <div class="accordion">
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>"APP NAME can't be opened because Apple cannot check it for malicious software"</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>This is normal for applications not distributed through the App Store. Right-click the app and select "Open", then click "Open" in the dialog.</p>
+                                            <p>Alternatively, go to System Preferences → Security & Privacy → General and click "Open Anyway".</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>Application is damaged and can't be opened</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>This usually indicates a corrupted download. Remove the application and download it again. Also run this command in Terminal:</p>
+                                            <pre><code>xattr -cr "/Applications/APP NAME.app"</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>Can't drag app to Applications folder</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>Make sure you're logged in with an administrator account. You can also copy the app instead of dragging: right-click the app → Copy "APP NAME", then navigate to Applications and right-click → Paste Item.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uninstall">
+                            <h4>Uninstallation</h4>
+                            <p>To uninstall APP NAME:</p>
+                            <ol>
+                                <li>Open Applications folder</li>
+                                <li>Drag APP NAME to Trash</li>
+                                <li>Empty Trash to permanently remove</li>
+                                <li>Optionally remove application data from <code>~/Library/Application Support/APP NAME</code></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linux Installation -->
+                <div id="linux" class="tabs__content">
+                    <div class="installation-guide">
+                        <h3>Linux Installation</h3>
+
+                        <div class="alert alert--info">
+                            <strong>System Requirements:</strong> Linux distribution with glibc 2.17+, 4GB RAM, 500MB disk space
+                        </div>
+
+                        <div class="installation-methods">
+                            <div class="method-tabs">
+                                <button class="method-tab active" onclick="switchMethod('appimage')">AppImage (Recommended)</button>
+                                <button class="method-tab" onclick="switchMethod('deb')">.deb (Debian/Ubuntu)</button>
+                                <button class="method-tab" onclick="switchMethod('rpm')">.rpm (Fedora/RHEL)</button>
+                                <button class="method-tab" onclick="switchMethod('tar')">.tar.gz (Generic)</button>
+                            </div>
+
+                            <!-- AppImage Method -->
+                            <div id="appimage" class="method-content active">
+                                <h4>AppImage Installation (Universal Linux)</h4>
+
+                                <div class="installation-steps">
+                                    <div class="step">
+                                        <div class="step__number">1</div>
+                                        <div class="step__content">
+                                            <h4>Download AppImage</h4>
+                                            <p>Download <code>APPNAME-v1.0.0.AppImage</code> from our <a href="download.html">download page</a>.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="step">
+                                        <div class="step__number">2</div>
+                                        <div class="step__content">
+                                            <h4>Make it Executable</h4>
+                                            <p>Open Terminal and run:</p>
+                                            <pre><code>chmod +x ~/Downloads/APPNAME-v1.0.0.AppImage</code></pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="step">
+                                        <div class="step__number">3</div>
+                                        <div class="step__content">
+                                            <h4>Run the Application</h4>
+                                            <p>Execute the AppImage directly:</p>
+                                            <pre><code>./~/Downloads/APPNAME-v1.0.0.AppImage</code></pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="step">
+                                        <div class="step__number">4</div>
+                                        <div class="step__content">
+                                            <h4>Optional: Move to Applications</h4>
+                                            <p>For easier access, move the AppImage to a convenient location:</p>
+                                            <pre><code>sudo mv ~/Downloads/APPNAME-v1.0.0.AppImage /opt/appname.AppImage
+sudo ln -s /opt/appname.AppImage /usr/local/bin/appname</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- .deb Method -->
+                            <div id="deb" class="method-content">
+                                <h4>.deb Package Installation (Debian/Ubuntu)</h4>
+
+                                <div class="installation-steps">
+                                    <div class="step">
+                                        <div class="step__number">1</div>
+                                        <div class="step__content">
+                                            <h4>Download .deb Package</h4>
+                                            <p>Download <code>appname_1.0.0_amd64.deb</code> from our <a href="download.html">download page</a>.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="step">
+                                        <div class="step__number">2</div>
+                                        <div class="step__content">
+                                            <h4>Install the Package</h4>
+                                            <p>Navigate to the download directory and install:</p>
+                                            <pre><code>cd ~/Downloads
+sudo dpkg -i appname_1.0.0_amd64.deb</code></pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="step">
+                                        <div class="step__number">3</div>
+                                        <div class="step__content">
+                                            <h4>Fix Dependencies (if needed)</h4>
+                                            <p>If there are dependency issues, run:</p>
+                                            <pre><code>sudo apt-get install -f</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- .rpm Method -->
+                            <div id="rpm" class="method-content">
+                                <h4>.rpm Package Installation (Fedora/RHEL)</h4>
+
+                                <div class="installation-steps">
+                                    <div class="step">
+                                        <div class="step__number">1</div>
+                                        <div class="step__content">
+                                            <h4>Download .rpm Package</h4>
+                                            <p>Download <code>appname-1.0.0.x86_64.rpm</code> from our <a href="download.html">download page</a>.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="step">
+                                        <div class="step__number">2</div>
+                                        <div class="step__content">
+                                            <h4>Install the Package</h4>
+                                            <p>Navigate to the download directory and install:</p>
+                                            <pre><code>cd ~/Downloads
+sudo rpm -i appname-1.0.0.x86_64.rpm</code></pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="step">
+                                        <div class="step__number">3</div>
+                                        <div class="step__content">
+                                            <h4>For Fedora Systems</h4>
+                                            <pre><code>sudo dnf install appname-1.0.0.x86_64.rpm</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- .tar.gz Method -->
+                            <div id="tar" class="method-content">
+                                <h4>Tarball Installation (Generic Linux)</h4>
+
+                                <div class="installation-steps">
+                                    <div class="step">
+                                        <div class="step__number">1</div>
+                                        <div class="step__content">
+                                            <h4>Download Tarball</h4>
+                                            <p>Download <code>appname-v1.0.0-linux-x64.tar.gz</code> from our <a href="download.html">download page</a>.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="step">
+                                        <div class="step__number">2</div>
+                                        <div class="step__content">
+                                            <h4>Extract the Archive</h4>
+                                            <pre><code>cd ~/Downloads
+tar -xzf appname-v1.0.0-linux-x64.tar.gz</code></pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="step">
+                                        <div class="step__number">3</div>
+                                        <div class="step__content">
+                                            <h4>Move to Installation Directory</h4>
+                                            <pre><code>sudo mv appname-v1.0.0-linux-x64 /opt/appname</code></pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="step">
+                                        <div class="step__number">4</div>
+                                        <div class="step__content">
+                                            <h4>Create Symbolic Link</h4>
+                                            <pre><code>sudo ln -s /opt/appname/appname /usr/local/bin/appname</code></pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="step">
+                                        <div class="step__number">5</div>
+                                        <div class="step__content">
+                                            <h4>Create Desktop Entry (Optional)</h4>
+                                            <pre><code>sudo cp /opt/appname/appname.desktop /usr/share/applications/</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="troubleshooting">
+                            <h4>Common Linux Issues</h4>
+                            <div class="accordion">
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>Permission denied when running AppImage</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>Make sure the AppImage has execute permissions:</p>
+                                            <pre><code>chmod +x APPNAME-v1.0.0.AppImage</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>Missing dependencies on Ubuntu/Debian</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>Install common dependencies:</p>
+                                            <pre><code>sudo apt-get update
+sudo apt-get install libgtk-3-0 libnotify4 libnss3 libxss1 libxtst6 libatspi2.0-0 libdrm2 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libxkbcommon0 libasound2</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>Floating point exception on older systems</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>This can happen on systems with older glibc versions. Try the AppImage which includes all dependencies, or use a compatible distribution.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Android Installation -->
+                <div id="android" class="tabs__content">
+                    <div class="installation-guide">
+                        <h3>Android Installation</h3>
+
+                        <div class="alert alert--info">
+                            <strong>System Requirements:</strong> Android 5.0 (Lollipop) or later, 2GB RAM, 100MB storage
+                        </div>
+
+                        <div class="installation-steps">
+                            <div class="step">
+                                <div class="step__number">1</div>
+                                <div class="step__content">
+                                    <h4>Download the APK</h4>
+                                    <p>Download <code>appname-v1.0.0.apk</code> from our <a href="download.html">download page</a> using your mobile browser.</p>
+                                    <div class="screenshot-placeholder">
+                                        <img src="assets/images/screenshots/android-download.png" alt="Android download">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">2</div>
+                                <div class="step__content">
+                                    <h4>Enable Unknown Sources</h4>
+                                    <p>Before installing, you need to allow installations from unknown sources:</p>
+
+                                    <div class="android-versions">
+                                        <div class="android-version">
+                                            <h5>Android 8.0+ (Recommended)</h5>
+                                            <p>The system will prompt you when you try to install the APK. Simply allow the installation for this app only.</p>
+                                        </div>
+
+                                        <div class="android-version">
+                                            <h5>Android 7.0-7.1</h5>
+                                            <p>Go to Settings → Security → Enable "Unknown sources".</p>
+                                        </div>
+
+                                        <div class="android-version">
+                                            <h5>Android 6.0 and below</h5>
+                                            <p>Go to Settings → Security → Enable "Unknown sources".</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">3</div>
+                                <div class="step__content">
+                                    <h4>Install the APK</h4>
+                                    <p>Open the downloaded APK file and tap "Install". Follow the on-screen prompts.</p>
+                                    <div class="screenshot-placeholder">
+                                        <img src="assets/images/screenshots/android-install.png" alt="Android installation">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">4</div>
+                                <div class="step__content">
+                                    <h4>Grant Permissions</h4>
+                                    <p>During first launch, grant the requested permissions:</p>
+                                    <ul>
+                                        <li>Storage access (for saving files)</li>
+                                        <li>Network access (for online features)</li>
+                                        <li>Notifications (optional)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">5</div>
+                                <div class="step__content">
+                                    <h4>Launch and Setup</h4>
+                                    <p>Open APP NAME from your app drawer and complete the initial setup.</p>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step__number">6</div>
+                                <div class="step__content">
+                                    <h4>Disable Unknown Sources (Optional)</h4>
+                                    <p>For security, you may want to disable unknown sources after installation:</p>
+                                    <p>Settings → Security → Disable "Unknown sources"</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="troubleshooting">
+                            <h4>Troubleshooting</h4>
+                            <div class="accordion">
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>"Install blocked" message</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>This means unknown sources are disabled. Enable them as shown in Step 2, or use the browser's built-in installer which may prompt you to allow the installation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>"App not installed" error</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>This can happen if:</p>
+                                            <ul>
+                                                <li>You're trying to install an incompatible version (ARM vs x86)</li>
+                                                <li>Storage space is insufficient</li>
+                                                <li>You have a previous version installed (uninstall first)</li>
+                                                <li>The APK file is corrupted (redownload)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>Parse error during installation</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>This usually means the APK file is corrupted or incomplete. Try downloading the file again using a stable internet connection.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <button class="accordion__button" onclick="toggleAccordion(this)">
+                                        <span>App crashes on startup</span>
+                                    </button>
+                                    <div class="accordion__content">
+                                        <div class="accordion__inner">
+                                            <p>Try these solutions:</p>
+                                            <ul>
+                                                <li>Clear app cache: Settings → Apps → APP NAME → Storage → Clear cache</li>
+                                                <li>Grant all requested permissions</li>
+                                                <li>Update your Android system</li>
+                                                <li>Restart your device</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uninstall">
+                            <h4>Uninstallation</h4>
+                            <p>To uninstall APP NAME:</p>
+                            <ol>
+                                <li>Open Settings → Apps</li>
+                                <li>Find "APP NAME" in the app list</li>
+                                <li>Tap "Uninstall" and confirm</li>
+                                <li>Optionally clear app data before uninstalling</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Issues Section -->
+    <section class="section download-section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Common Installation Issues</h2>
+                <p class="section__subtitle">Solutions to the most frequently encountered problems</p>
+            </div>
+
+            <div class="common-issues">
+                <div class="issue-card">
+                    <h3>Insufficient Disk Space</h3>
+                    <p>Make sure you have at least 500MB of free disk space for installation and additional space for application data.</p>
+                    <div class="solution">
+                        <strong>Solution:</strong> Free up disk space by removing unnecessary files or applications.
+                    </div>
+                </div>
+
+                <div class="issue-card">
+                    <h3>Antivirus Blocking Installation</h3>
+                    <p>Some antivirus software may flag new applications as potentially harmful.</p>
+                    <div class="solution">
+                        <strong>Solution:</strong> Temporarily disable your antivirus during installation, then re-enable it. Add APP NAME to your antivirus whitelist.
+                    </div>
+                </div>
+
+                <div class="issue-card">
+                    <h3>Network Connection Issues</h3>
+                    <p>Unstable internet connection during download can corrupt the installer file.</p>
+                    <div class="solution">
+                        <strong>Solution:</strong> Re-download the installer using a stable internet connection. Verify the checksum after download.
+                    </div>
+                </div>
+
+                <div class="issue-card">
+                    <h3>Outdated Operating System</h3>
+                    <p>APP NAME requires a minimum operating system version to function properly.</p>
+                    <div class="solution">
+                        <strong>Solution:</strong> Update your operating system to the latest version to ensure compatibility and security.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Need Help Section -->
+    <section class="section">
+        <div class="container">
+            <div class="cta">
+                <h2 class="cta__title">Still Need Help?</h2>
+                <p class="cta__description">Our support team is here to assist you with any installation issues</p>
+                <a href="contact.html" class="btn cta__button">Contact Support</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4>Product</h4>
+                    <ul class="footer__links">
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="install.html">Installation</a></li>
+                        <li><a href="userguide.html">User Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Support</h4>
+                    <ul class="footer__links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="userguide.html">Documentation</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Connect</h4>
+                    <ul class="footer__links">
+                        <li><a href="contact.html">Get Support</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>About</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 APP NAME. All rights reserved. | Version 1.0.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Tab switching functionality
+        function switchTab(tabName) {
+            // Remove active class from all tabs and contents
+            document.querySelectorAll('.tabs__button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelectorAll('.tabs__content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Add active class to clicked tab and corresponding content
+            event.target.closest('.tabs__button').classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        }
+
+        // Method switching for Linux
+        function switchMethod(methodName) {
+            // Remove active class from all method tabs and contents
+            document.querySelectorAll('.method-tab').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelectorAll('.method-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Add active class to clicked method tab and corresponding content
+            event.target.classList.add('active');
+            document.getElementById(methodName).classList.add('active');
+        }
+
+        // Accordion functionality (redefined from download.html)
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const isActive = button.classList.contains('active');
+
+            // Close all accordions in the same section
+            const parentSection = button.closest('.accordion, .troubleshooting');
+            parentSection.querySelectorAll('.accordion__button').forEach(btn => {
+                btn.classList.remove('active');
+                btn.nextElementSibling.classList.remove('active');
+            });
+
+            // Open clicked accordion if it wasn't active
+            if (!isActive) {
+                button.classList.add('active');
+                content.classList.add('active');
+            }
+        }
+
+        // Initialize first Linux method as active
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstMethodTab = document.querySelector('.method-tab');
+            if (firstMethodTab) {
+                firstMethodTab.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

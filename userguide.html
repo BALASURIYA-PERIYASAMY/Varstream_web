@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete user guide for APP NAME. Getting started tutorials, interface overview, core workflows, advanced features, and FAQ.">
+    <meta name="keywords" content="APP NAME user guide, tutorial, getting started, help, documentation, manual">
+    <meta name="author" content="APP NAME">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/userguide.html">
+    <meta property="og:title" content="User Guide - APP NAME">
+    <meta property="og:description" content="Complete user guide for APP NAME. Getting started tutorials, interface overview, and advanced features.">
+    <meta property="og:image" content="https://example.com/assets/images/userguide-hero.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://example.com/userguide.html">
+    <meta property="twitter:title" content="User Guide - APP NAME">
+    <meta property="twitter:description" content="Complete user guide for APP NAME. Getting started tutorials and documentation.">
+    <meta property="twitter:image" content="https://example.com/assets/images/userguide-hero.png">
+
+    <title>User Guide - APP NAME</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "User Guide - APP NAME",
+      "description": "Complete user guide for APP NAME with tutorials and documentation",
+      "url": "https://example.com/userguide.html",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "APP NAME",
+        "url": "https://example.com"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="assets/images/logo.svg" alt="APP NAME Logo">
+                <span>APP NAME</span>
+            </div>
+
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="features.html" class="nav__link">Features</a></li>
+                <li><a href="download.html" class="nav__link">Download</a></li>
+                <li><a href="install.html" class="nav__link">Install</a></li>
+                <li><a href="userguide.html" class="nav__link active">User Guide</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+
+            <a href="download.html" class="nav__cta">Download Now</a>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="nav__overlay" id="navOverlay"></div>
+    </header>
+
+    <!-- User Guide Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="text-center">
+                <h1>APP NAME User Guide</h1>
+                <p class="hero__subtitle" style="color: rgba(255, 255, 255, 0.9); max-width: 600px; margin: 0 auto var(--space-8);">
+                    Everything you need to get started and master APP NAME. From quick start guide to advanced features.
+                </p>
+                <div class="hero__actions">
+                    <a href="#quick-start" class="btn btn--primary btn--large">Get Started</a>
+                    <a href="#faq" class="btn btn--secondary btn--large">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="section">
+        <div class="container">
+            <div class="toc">
+                <h2>Table of Contents</h2>
+                <nav class="toc__nav">
+                    <ul class="toc__list">
+                        <li><a href="#quick-start">Quick Start Guide</a></li>
+                        <li><a href="#interface-overview">Interface Overview</a></li>
+                        <li><a href="#core-workflows">Core Workflows</a></li>
+                        <li><a href="#advanced-features">Advanced Features</a></li>
+                        <li><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+                        <li><a href="#troubleshooting">Troubleshooting</a></li>
+                        <li><a href="#faq">Frequently Asked Questions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start Guide -->
+    <section id="quick-start" class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Quick Start Guide</h2>
+                <p class="section__subtitle">Get up and running with APP NAME in minutes</p>
+            </div>
+
+            <div class="quick-start-steps">
+                <div class="step">
+                    <div class="step__number">1</div>
+                    <div class="step__content">
+                        <h4>First Launch</h4>
+                        <p>After installing APP NAME, launch it from your applications menu or desktop shortcut.</p>
+                        <div class="screenshot-placeholder">
+                            <img src="assets/images/screenshots/first-launch.png" alt="First launch screen">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">2</div>
+                    <div class="step__content">
+                        <h4>Welcome Screen</h4>
+                        <p>The first time you open APP NAME, you'll see a Welcome screen. Click "Get Started" to begin.</p>
+                        <div class="options-grid">
+                            <div class="option-card">
+                                <h5>Create Account</h5>
+                                <p>Sign up for a free account to sync your work across devices and access cloud features.</p>
+                            </div>
+                            <div class="option-card">
+                                <h5>Continue as Guest</h5>
+                                <p>Use APP NAME without an account. Some features will be limited.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">3</div>
+                    <div class="step__content">
+                        <h4>Grant Permissions</h4>
+                        <p>APP NAME may request permissions for:</p>
+                        <ul>
+                            <li><strong>File System Access:</strong> To save and open your files</li>
+                            <li><strong>Network Access:</strong> For cloud sync and online features</li>
+                            <li><strong>Notifications:</strong> To alert you of important updates</li>
+                        </ul>
+                        <div class="alert alert--info">
+                            <strong>Note:</strong> These permissions are optional and can be managed in Settings.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">4</div>
+                    <div class="step__content">
+                        <h4>Create Your First Project</h4>
+                        <p>Once in the main interface, create your first project:</p>
+                        <ol>
+                            <li>Click the "New Project" button (or press <kbd>Ctrl+N</kbd>)</li>
+                            <li>Choose a template or start with a blank project</li>
+                            <li>Name your project and choose a save location</li>
+                            <li>Click "Create" to start working</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">5</div>
+                    <div class="step__content">
+                        <h4>Explore the Interface</h4>
+                        <p>Take a moment to familiarize yourself with the main interface. Hover over elements to see tooltips, and check out the Help menu for more resources.</p>
+                        <div class="tip-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 6v6l4 2" stroke="white" stroke-width="2" fill="none"></path>
+                            </svg>
+                            <p><strong>Pro Tip:</strong> Press <kbd>F1</kbd> anytime to access the help menu and keyboard shortcuts reference.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interface Overview -->
+    <section id="interface-overview" class="section download-section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Interface Overview</h2>
+                <p class="section__subtitle">Understanding the main components of APP NAME</p>
+            </div>
+
+            <div class="interface-diagram">
+                <div class="interface-map">
+                    <div class="interface-component" data-component="header">
+                        <div class="component-label">A. Header Bar</div>
+                        <p>Contains app logo, version info, main menu, and quick actions</p>
+                    </div>
+
+                    <div class="interface-component" data-component="sidebar">
+                        <div class="component-label">B. Navigation Sidebar</div>
+                        <p>Quick access to projects, recent files, and main tools</p>
+                    </div>
+
+                    <div class="interface-component" data-component="toolbar">
+                        <div class="component-label">C. Main Toolbar</div>
+                        <p>Frequently used tools and actions for the current workspace</p>
+                    </div>
+
+                    <div class="interface-component" data-component="workspace">
+                        <div class="component-label">D. Main Workspace</div>
+                        <p>Primary area for creating and editing your projects</p>
+                    </div>
+
+                    <div class="interface-component" data-component="properties">
+                        <div class="component-label">E. Properties Panel</div>
+                        <p>Context-sensitive settings and options for selected items</p>
+                    </div>
+
+                    <div class="interface-component" data-component="status">
+                        <div class="component-label">F. Status Bar</div>
+                        <p>Shows current status, progress indicators, and quick settings</p>
+                    </div>
+                </div>
+
+                <div class="interface-screenshot">
+                    <img src="assets/images/screenshots/interface-overview.png" alt="APP NAME interface overview with numbered components">
+                </div>
+            </div>
+
+            <div class="component-details">
+                <h3>Interface Components Explained</h3>
+
+                <div class="component-detail">
+                    <h4>Header Bar</h4>
+                    <ul>
+                        <li><strong>App Logo:</strong> Click to return to home screen</li>
+                        <li><strong>Version Info:</strong> Shows current version and update status</li>
+                        <li><strong>Main Menu:</strong> File, Edit, View, Tools, Help menus</li>
+                        <li><strong>Search Bar:</strong> Quick search for projects and features</li>
+                        <li><strong>User Profile:</strong> Account settings and sync status</li>
+                    </ul>
+                </div>
+
+                <div class="component-detail">
+                    <h4>Navigation Sidebar</h4>
+                    <ul>
+                        <li><strong>Projects:</strong> List of all your projects</li>
+                        <li><strong>Recent Files:</strong> Quickly access recently opened files</li>
+                        <li><strong>Templates:</strong> Pre-built project templates</li>
+                        <li><strong>Trash:</strong> Deleted items (recoverable within 30 days)</li>
+                    </ul>
+                </div>
+
+                <div class="component-detail">
+                    <h4>Main Toolbar</h4>
+                    <ul>
+                        <li><strong>Selection Tools:</strong> Select, move, and transform objects</li>
+                        <li><strong>Drawing Tools:</strong> Pens, shapes, and text tools</li>
+                        <li><strong>Layers Panel:</strong> Manage project layers</li>
+                        <li><strong>Zoom Controls:</strong> Zoom in/out and fit to screen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Workflows -->
+    <section id="core-workflows" class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Core Workflows</h2>
+                <p class="section__subtitle">Essential tasks and how to accomplish them</p>
+            </div>
+
+            <div class="workflows">
+                <div class="workflow">
+                    <div class="workflow__header">
+                        <h3>Creating a New Project</h3>
+                        <p>Start a fresh project from scratch or use a template</p>
+                    </div>
+
+                    <div class="workflow__steps">
+                        <div class="workflow-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Choose Your Starting Point</h4>
+                                <ul>
+                                    <li><strong>Blank Project:</strong> Start with a completely empty canvas</li>
+                                    <li><strong>Template:</strong> Choose from pre-designed templates for common use cases</li>
+                                    <li><strong>Import:</strong> Bring in existing files from other applications</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Configure Project Settings</h4>
+                                <ul>
+                                    <li>Set project name and description</li>
+                                    <li>Choose project dimensions and units</li>
+                                    <li>Select color mode (RGB/CMYK)</li>
+                                    <li>Set resolution and quality settings</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Save Your Project</h4>
+                                <p>Save your project with a meaningful name and organize it in folders for easy access later.</p>
+                                <div class="code-example">
+                                    <strong>Keyboard Shortcut:</strong> <kbd>Ctrl+S</kbd> (Windows) or <kbd>Cmd+S</kbd> (Mac)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workflow">
+                    <div class="workflow__header">
+                        <h3>Importing and Managing Files</h3>
+                        <p>Work with various file formats and manage your assets</p>
+                    </div>
+
+                    <div class="workflow__steps">
+                        <div class="workflow-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Import Methods</h4>
+                                <ul>
+                                    <li><strong>Drag & Drop:</strong> Directly drag files into the workspace</li>
+                                    <li><strong>File Menu:</strong> File → Import → Browse for files</li>
+                                    <li><strong>Copy & Paste:</strong> Paste content from clipboard</li>
+                                    <li><strong>Cloud Import:</strong> Import from cloud storage services</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Supported File Formats</h4>
+                                <div class="format-grid">
+                                    <div class="format-category">
+                                        <h5>Images</h5>
+                                        <p>PNG, JPG, GIF, SVG, PSD, AI, PDF</p>
+                                    </div>
+                                    <div class="format-category">
+                                        <h5>Documents</h5>
+                                        <p>DOCX, TXT, RTF, ODT</p>
+                                    </div>
+                                    <div class="format-category">
+                                        <h5>Data</h5>
+                                        <p>CSV, JSON, XML, XLSX</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Asset Management</h4>
+                                <ul>
+                                    <li>Use the Asset Library to organize imported files</li>
+                                    <li>Create folders and tags for better organization</li>
+                                    <li>Preview files before importing</li>
+                                    <li>Batch import multiple files at once</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workflow">
+                    <div class="workflow__header">
+                        <h3>Saving and Exporting</h3>
+                        <p>Save your work and export in various formats</p>
+                    </div>
+
+                    <div class="workflow__steps">
+                        <div class="workflow-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Save vs Export</h4>
+                                <ul>
+                                    <li><strong>Save (.project):</strong> Preserves all layers, edits, and project data for future editing</li>
+                                    <li><strong>Export:</strong> Creates a final version in a specific format for sharing or publishing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Auto-Save Settings</h4>
+                                <p>Enable auto-save in Settings to automatically save your work:</p>
+                                <ul>
+                                    <li>Configure save intervals (every 5, 10, or 15 minutes)</li>
+                                    <li>Set maximum number of auto-saved versions</li>
+                                    <li>Choose auto-save location</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Export Options</h4>
+                                <ul>
+                                    <li><strong>Format Selection:</strong> Choose from dozens of export formats</li>
+                                    <li><strong>Quality Settings:</strong> Balance file size and quality</li>
+                                    <li><strong>Batch Export:</strong> Export multiple files or pages at once</li>
+                                    <li><strong>Presets:</strong> Save custom export settings for reuse</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Features -->
+    <section id="advanced-features" class="section download-section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Advanced Features</h2>
+                <p class="section__subtitle">Take your skills to the next level with powerful tools</p>
+            </div>
+
+            <div class="advanced-grid">
+                <div class="advanced-feature">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="9" x2="15" y2="9"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3>Automation & Scripts</h3>
+                    <p>Create custom workflows and automate repetitive tasks using our powerful scripting engine.</p>
+                    <ul>
+                        <li>JavaScript-based scripting</li>
+                        <li>Record and playback actions</li>
+                        <li>Custom function library</li>
+                        <li>Scheduled tasks and batch processing</li>
+                    </ul>
+                    <a href="#" class="btn btn--secondary btn--small">Learn More</a>
+                </div>
+
+                <div class="advanced-feature">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Cloud Integration</h3>
+                    <p>Sync your work across devices and collaborate with team members in real-time.</p>
+                    <ul>
+                        <li>Automatic cloud sync</li>
+                        <li>Version history and rollback</li>
+                        <li>Real-time collaboration</li>
+                        <li>Offline mode with sync on reconnect</li>
+                    </ul>
+                    <a href="#" class="btn btn--secondary btn--small">Learn More</a>
+                </div>
+
+                <div class="advanced-feature">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"></path>
+                        </svg>
+                    </div>
+                    <h3>Advanced Security</h3>
+                    <p>Enterprise-grade security features to protect your sensitive data and projects.</p>
+                    <ul>
+                        <li>End-to-end encryption</li>
+                        <li>Two-factor authentication</li>
+                        <li>Access controls and permissions</li>
+                        <li>Audit logs and compliance reporting</li>
+                    </ul>
+                    <a href="#" class="btn btn--secondary btn--small">Learn More</a>
+                </div>
+
+                <div class="advanced-feature">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 1l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 1z"></path>
+                        </svg>
+                    </div>
+                    <h3>Plugins & Extensions</h3>
+                    <p>Extend functionality with our growing ecosystem of plugins and third-party integrations.</p>
+                    <ul>
+                        <li>Plugin marketplace</li>
+                        <li>Custom API access</li>
+                        <li>Third-party service integrations</li>
+                        <li>Developer SDK and documentation</li>
+                    </ul>
+                    <a href="#" class="btn btn--secondary btn--small">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keyboard Shortcuts -->
+    <section id="keyboard-shortcuts" class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Keyboard Shortcuts</h2>
+                <p class="section__subtitle">Work faster with these essential keyboard shortcuts</p>
+            </div>
+
+            <div class="shortcuts-grid">
+                <div class="shortcuts-category">
+                    <h3>File Operations</h3>
+                    <table class="shortcuts-table">
+                        <tbody>
+                            <tr>
+                                <td>New Project</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>N</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Open</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>O</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Save</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>S</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Save As</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Export</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>E</kbd></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="shortcuts-category">
+                    <h3>Edit Operations</h3>
+                    <table class="shortcuts-table">
+                        <tbody>
+                            <tr>
+                                <td>Undo</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>Z</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Redo</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>Y</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Cut</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>X</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Copy</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>C</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Paste</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>V</kbd></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="shortcuts-category">
+                    <h3>View Operations</h3>
+                    <table class="shortcuts-table">
+                        <tbody>
+                            <tr>
+                                <td>Zoom In</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>+</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Zoom Out</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>-</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Fit to Screen</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>0</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Fullscreen</td>
+                                <td><kbd>F11</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Toggle Sidebar</td>
+                                <td><kbd>Ctrl</kbd> + <kbd>B</kbd></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="shortcuts-category">
+                    <h3>Tools & Actions</h3>
+                    <table class="shortcuts-table">
+                        <tbody>
+                            <tr>
+                                <td>Select Tool</td>
+                                <td><kbd>V</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Text Tool</td>
+                                <td><kbd>T</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Shape Tool</td>
+                                <td><kbd>U</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Pen Tool</td>
+                                <td><kbd>P</kbd></td>
+                            </tr>
+                            <tr>
+                                <td>Hand Tool</td>
+                                <td><kbd>H</kbd></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="shortcut-tip">
+                <div class="tip-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 6v6l4 2" stroke="white" stroke-width="2" fill="none"></path>
+                    </svg>
+                </div>
+                <div class="tip-content">
+                    <h4>Pro Tip</h4>
+                    <p>Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to see all available keyboard shortcuts in the app. You can also customize shortcuts in Settings → Keyboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting -->
+    <section id="troubleshooting" class="section download-section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Troubleshooting</h2>
+                <p class="section__subtitle">Solutions to common issues and problems</p>
+            </div>
+
+            <div class="troubleshooting-grid">
+                <div class="trouble-item">
+                    <h3>App Won't Start</h3>
+                    <div class="solution-steps">
+                        <div class="step">
+                            <h4>Check System Requirements</h4>
+                            <p>Ensure your system meets the minimum requirements specified on the download page.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Restart Your Computer</h4>
+                            <p>A simple restart can resolve many startup issues.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Reinstall the Application</h4>
+                            <p>Completely uninstall and reinstall APP NAME to fix corrupted installations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trouble-item">
+                    <h3>Performance Issues</h3>
+                    <div class="solution-steps">
+                        <div class="step">
+                            <h4>Check Available Memory</h4>
+                            <p>Ensure you have sufficient RAM available. Close other applications if needed.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Clear Cache</h4>
+                            <p>Clear the application cache in Settings → Advanced → Clear Cache.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Reduce Project Complexity</h4>
+                            <p>Split large projects into smaller files or reduce the number of layers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trouble-item">
+                    <h3>File Import/Export Issues</h3>
+                    <div class="solution-steps">
+                        <div class="step">
+                            <h4>Check File Format</h4>
+                            <p>Ensure the file format is supported. Check the documentation for supported formats.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Check File Permissions</h4>
+                            <p>Ensure you have read/write permissions for the source and destination folders.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Update Application</h4>
+                            <p>Make sure you're using the latest version of APP NAME.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trouble-item">
+                    <h3>Cloud Sync Problems</h3>
+                    <div class="solution-steps">
+                        <div class="step">
+                            <h4>Check Internet Connection</h4>
+                            <p>Ensure you have a stable internet connection.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Verify Login Credentials</h4>
+                            <p>Sign out and sign back in to refresh your authentication.</p>
+                        </div>
+                        <div class="step">
+                            <h4>Manual Sync</h4>
+                            <p>Trigger a manual sync in Settings → Cloud → Sync Now.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Frequently Asked Questions</h2>
+                <p class="section__subtitle">Quick answers to common questions</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-button" onclick="toggleFaq(this)">
+                        <span>How do I recover a deleted project?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-content">
+                        <p>Deleted projects are moved to the Trash folder and remain there for 30 days. To recover:</p>
+                        <ol>
+                            <li>Open the Trash folder in the sidebar</li>
+                            <li>Right-click the project you want to recover</li>
+                            <li>Select "Restore" from the context menu</li>
+                            <li>The project will be restored to its original location</li>
+                        </ol>
+                        <p><strong>Note:</strong> After 30 days, deleted projects are permanently removed and cannot be recovered.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-button" onclick="toggleFaq(this)">
+                        <span>Can I use APP NAME on multiple devices?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-content">
+                        <p>Yes! With a free account, you can use APP NAME on up to 3 devices simultaneously. Professional users can use it on up to 10 devices.</p>
+                        <p>Your projects and settings sync automatically across all your devices when you're signed in.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-button" onclick="toggleFaq(this)">
+                        <span>What file formats can APP NAME export to?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-content">
+                        <p>APP NAME supports exporting to over 50 file formats, including:</p>
+                        <ul>
+                            <li><strong>Images:</strong> PNG, JPG, GIF, SVG, PDF, PSD</li>
+                            <li><strong>Documents:</strong> PDF, DOCX, HTML, Markdown</li>
+                            <li><strong>Data:</strong> JSON, XML, CSV, Excel</li>
+                            <li><strong>Video:</strong> MP4, AVI, MOV (for presentations)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-button" onclick="toggleFaq(this)">
+                        <span>How do I contact technical support?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-content">
+                        <p>You can reach our support team through multiple channels:</p>
+                        <ul>
+                            <li><strong>Email:</strong> support@example.com (response within 24 hours)</li>
+                            <li><strong>Live Chat:</strong> Available Monday-Friday, 9 AM - 6 PM EST</li>
+                            <li><strong>Community Forum:</strong> community.example.com</li>
+                            <li><strong>Help Center:</strong> help.example.com</li>
+                        </ul>
+                        <p>Professional users get priority support with guaranteed response times.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-button" onclick="toggleFaq(this)">
+                        <span>Is my data safe and secure?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-content">
+                        <p>Absolutely. We take data security seriously:</p>
+                        <ul>
+                            <li>All data is encrypted with AES-256 encryption</li>
+                            <li>We're SOC 2 Type II certified</li>
+                            <li>Regular security audits and penetration testing</li>
+                            <li>GDPR and CCPA compliant</li>
+                            <li>You own your data and can export it anytime</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-button" onclick="toggleFaq(this)">
+                        <span>How often is APP NAME updated?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-content">
+                        <p>We release updates regularly:</p>
+                        <ul>
+                            <li><strong>Major Updates:</strong> Every 3-4 months with significant new features</li>
+                            <li><strong>Minor Updates:</strong> Monthly with feature improvements and bug fixes</li>
+                            <li><strong>Security Updates:</strong> As needed, often within 24 hours of discovering issues</li>
+                        </ul>
+                        <p>Updates are automatic by default, but you can change this in Settings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Need Help -->
+    <section class="section">
+        <div class="container">
+            <div class="cta">
+                <h2 class="cta__title">Still Need Help?</h2>
+                <p class="cta__description">Our support team is here to help you succeed with APP NAME</p>
+                <div class="cta__actions">
+                    <a href="contact.html" class="btn cta__button">Contact Support</a>
+                    <a href="#" class="btn btn--secondary">Browse Community Forum</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4>Product</h4>
+                    <ul class="footer__links">
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="install.html">Installation</a></li>
+                        <li><a href="userguide.html">User Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Support</h4>
+                    <ul class="footer__links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="userguide.html">Documentation</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Connect</h4>
+                    <ul class="footer__links">
+                        <li><a href="contact.html">Get Support</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>About</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 APP NAME. All rights reserved. | Version 1.0.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // FAQ toggle functionality
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+            const isActive = button.classList.contains('active');
+
+            // Close all FAQ items
+            document.querySelectorAll('.faq-button').forEach(btn => {
+                btn.classList.remove('active');
+                btn.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+            });
+            document.querySelectorAll('.faq-content').forEach(content => {
+                content.style.maxHeight = '0';
+            });
+
+            // Open clicked FAQ if it wasn't active
+            if (!isActive) {
+                button.classList.add('active');
+                icon.style.transform = 'rotate(180deg)';
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Initialize FAQ items on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Close all FAQ content initially
+            document.querySelectorAll('.faq-content').forEach(content => {
+                content.style.maxHeight = '0';
+                content.style.overflow = 'hidden';
+                content.style.transition = 'max-height 0.3s ease';
+            });
+
+            // Rotate FAQ icons initially
+            document.querySelectorAll('.faq-icon').forEach(icon => {
+                icon.style.transition = 'transform 0.3s ease';
+            });
+        });
+    </script>
+</body>
+</html>
